@@ -1,0 +1,5 @@
+name = str(input("Привіт, мене звати Влад! Як тебе звати?: "))
+print ("Вітаю", name)
+num_1 = int(input('Загадай число: '))
+num_2 = int(input('Загадай інше число: '))
+print (num_1, "+", num_2, "=", num_1 + num_2)
