@@ -16,11 +16,15 @@ for i in lst_1:
     if i not in lst_3:
         count_1 = count_1 + 1
         lst_3.append(i)
+    else:
+        lst_3.remove(i)
 
 for a in lst_2:
     if a not in lst_3:
         count_1 = count_1 + 1
         lst_3.append(a)
+    else:
+        lst_3.remove(a)
 
-print("Унікальних чисел разом:",count_1)
+print("Унікальних чисел разом:",len(lst_3))
 print("Унікальні числа:",lst_3)
