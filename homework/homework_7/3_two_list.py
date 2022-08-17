@@ -9,10 +9,8 @@ lst_1 = [num_1, num_2, num_3]
 lst_2 = [num_4, num_5, num_6]
 
 lst_3 = []
-lst_4 = []
 
 count_1 = 0
-count_2 = 0
 
 for i in lst_1:
     if i not in lst_3:
@@ -20,10 +18,9 @@ for i in lst_1:
         lst_3.append(i)
 
 for a in lst_2:
-    if a not in lst_4:
-        count_2 = count_2 + 1
-        lst_4.append(a)
+    if a not in lst_3:
+        count_1 = count_1 + 1
+        lst_3.append(a)
 
-print("Унікальних чисел у першому списку:",count_1)
-print("Унікальних чисел у другому списку:",count_2)
-print("Унікальних чисел разом:",count_1 + count_2)
+print("Унікальних чисел разом:",count_1)
+print("Унікальні числа:",lst_3)
